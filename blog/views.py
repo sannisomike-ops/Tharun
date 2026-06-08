@@ -45,8 +45,6 @@ def login_page(request):
 
         if user is not None:
             login(request, user)
-
-            # AFTER LOGIN GO HOME PAGE
             return redirect('/')
 
     return render(request, 'login.html')
